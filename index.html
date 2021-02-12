@@ -1,6 +1,22 @@
 <!Doctype html>
 <html>
 <body>
-<h1>Hello World</h1>
+<h1>Sample page</h1>
 </body>
+  
+<script src="https://unpkg.com/blip-chat-widget" type="text/javascript">
+</script>
+<script>
+    (function () {
+        window.onload = function () {
+            new BlipChat()
+            .withAppKey('bWNpdGllc2RldjowZjAwMThiNC04MWRjLTQyZTMtOWExNC05YTMzOTgxNTdiNTU=')
+            .withButton({"color":"#CA1F09","icon":""})
+            .withCustomCommonUrl('https://chat.blip.ai/')
+            .build();
+        }
+    })();
+</script>
+                                
+  
 </html>
